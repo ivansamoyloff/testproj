@@ -1,12 +1,12 @@
 var result;
- result = prompt('Enter the string');
-function Lucas() {
+result = prompt('Enter the string');
+function Lucas(result) {
     result = result.match(/[a-z]|[а-я]/gi);
     result.sort();
-    console.log(result);
+    return result;
 }
-var obj = {};
-function Count(){
+function Count(result){
+    var obj = {};
     for(var i=0;i<result.length;i++) {
         var key = result[i];
         if(!obj[key]){
@@ -14,7 +14,7 @@ function Count(){
         }
         obj[key]+=1;
     }
-    console.log(obj);
+    return obj;
 }
 Lucas();
 Count();
