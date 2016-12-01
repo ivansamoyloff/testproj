@@ -2,7 +2,6 @@ var result;
  result = prompt('Enter the string');
 function Lucas() {
     result = result.toLowerCase();
-    console.log(result);
     result = result.match(/[a-z]|[а-я]/g);
     result.sort();
     console.log(result);
@@ -11,11 +10,14 @@ function Lucas() {
 }
 var obj = {};
 function Count(){
-    for(var i=0; result.length<i;i++){
+    for(var i=0;i<result.length;i++) {
         var key = result[i];
-        obj[key] = 0;
-        while(result[i]==result[i+1]){
-            obj[key]+=1;}
+        if(obj[key]==undefined){
+            obj[key]=0;
+            obj[key]+=1;
+        } else {
+            obj[key]+=1;
+        }
     }
     console.log(obj);
 }
