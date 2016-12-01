@@ -6,7 +6,7 @@ function Lucas(result) {
     return result;
 }
 function Count(result){
-    var obj = {};
+    var obj={};
     for(var i=0;i<result.length;i++) {
         var key = result[i];
         if(!obj[key]){
