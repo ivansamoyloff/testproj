@@ -4,8 +4,6 @@ function Lucas() {
     result = result.match(/[a-z]|[а-я]/gi);
     result.sort();
     console.log(result);
-
-
 }
 var obj = {};
 function Count(){
